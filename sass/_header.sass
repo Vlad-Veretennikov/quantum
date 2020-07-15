@@ -1,0 +1,337 @@
+.header 
+  background: #262626
+  position: relative
+  margin: 0 0 29px
+  &:after
+    content: ''
+    height: 3px
+    width: 100%
+    background: #303030
+    position: absolute
+    top: 115px
+    left: 0
+
+.header__inner 
+
+.header__top 
+  height: 115px
+  width: 100%
+  max-width: 1044px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  position: relative
+
+.header__logo 
+  margin: 0 58px 0 0
+  a 
+    color: #f2f2f2
+    font-size: 22px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 1.76px
+
+.header__serch 
+  display: flex
+  width: 468px
+  height: 50px
+  border: 2px solid #303030
+  border-radius: 5px 
+
+.header__input-search 
+  flex: 0 0 60%
+  background: none 
+  padding: 0 20px
+  font-size: 16px
+  color: #fff
+  &::placeholder
+    color: #808080
+    font-size: 14px
+    font-weight: 500
+  &:focus 
+    &::placeholder 
+      opacity: 0
+
+.header__serch-cat 
+  flex: 0 0 30%
+  position: relative
+  border-left: 2px solid #303030
+  border-right: 2px solid #303030
+  cursor: pointer
+  &:after
+    content: ''
+    height: 8px
+    width: 8px
+    border-top: 3px solid #4d4d4d
+    border-right: 3px solid #4d4d4d
+    position: absolute
+    top: 40%
+    right: 28px
+    transform: rotate(133deg)
+  @media (min-width: 992.98px)
+    &:hover
+      background: black
+      transition: all .3s linear
+
+.header__search-cat-head 
+  color: #a6a6a6
+  font-size: 10px
+  font-weight: 900
+  text-transform: uppercase
+  letter-spacing: 1.25px
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center 
+  align-items: center
+  span 
+    padding: 0 23px 0 0
+
+.header__search-cat-body 
+  padding: 10px 0 0
+  display: none
+  position: absolute
+  top: 90%
+  left: 0
+  background: #262626
+  z-index: 3
+  a 
+    display: block 
+    padding: 13px 10px
+    line-height: 1.4
+    color: black
+    background: gray
+    @media (min-width: 992.98px)
+      &:hover
+        background: lightblue
+        transition: all .3s linear
+
+.header__search-body-item 
+
+.header__seach-btn 
+  flex: 0 0 10%
+  background: none
+  @media (min-width: 992.98px)
+    &:hover
+      background: black
+      transition: all .3s linear
+
+.header__user-data 
+  margin: 0 0 0 auto 
+  display: flex
+
+.header__data-itm
+  display: flex
+  align-items: center
+  color: #808080
+  font-size: 14px
+  font-weight: 500
+  cursor: pointer
+  &:not(:last-child)
+    margin: 0 35px 0 0
+  span 
+    margin: 0 0 0 20px
+  @media (min-width: 992.98px)
+    &:hover
+      text-decoration: underline
+
+.header__data-itm--cart
+
+.header__cart-img
+  position: relative
+  &:after
+    content: ''
+    height: 6px
+    width: 6px
+    background: #1875f0
+    border-radius: 50%
+    position: absolute
+    top: -10px
+    right: -5px
+    animation: circle 1.5s linear 0s infinite alternate 
+
+@keyframes circle 
+  0%
+    background: #1875f0
+  100%
+    background: coral
+
+.header__data-itm--list 
+
+.header__data-itm--sign-in
+
+.header__bottom 
+  height: 60px
+  display: flex
+  align-items: center
+
+.header__unit 
+  border-right: 3px solid #303030 
+  height: 100%
+  color: #d9d9d9
+  font-size: 14px
+  font-weight: 500
+  display: flex
+  align-items: center
+  position: relative 
+
+.header__unit--cat 
+  flex: 0 0 20%
+  border-left: 3px solid #303030 
+
+.header__unit-head
+  display: flex
+  height: 100%
+  width: 100%
+  align-items: center
+  cursor: pointer
+  padding: 0 0 0 19px
+  @media (min-width: 992.98px)
+    &:hover
+      background: #000
+      transition: all .3s linear
+
+.unit-burger 
+  width: 18px
+  height: 12px
+  margin: 0 20px 0 0
+  position: relative
+  &:before, &:after, span 
+    content: ''
+    position: absolute
+    left: 0
+    width: 100%
+    height: 2px
+    background: green 
+  &:before 
+    top: 0
+  &:after 
+    bottom: 0
+  span 
+    top: 50%
+    transform: translateY(-50%)
+
+.unit-burger.active
+  span 
+    display: none
+  &:before, &:after 
+    background: coral
+  &:before 
+    transform: translateY(5px) rotate(45deg)
+  &:after
+    transform: translateY(-5px) rotate(-45deg)
+
+.header__unit-body 
+  position: absolute
+  top: 100%
+  left: 0 
+  width: 100%
+  background: gray
+  display: none
+  z-index: 100
+
+.header__unit-body--cat 
+
+.header__unit-body-item
+  position: relative 
+  cursor: pointer
+  img 
+    position: absolute
+    top: 50%
+    transform: translateY(-50%) 
+    left: 10px
+    width: 20px
+  a
+    display: inline-block
+    font-size: 15px
+    color: black
+    padding: 15px 5px 15px 40px
+  @media (min-width: 992.98px)
+    &:hover
+      background: lightblue 
+      transition: all .3s linear
+
+.header__unit-body-link 
+
+.header__unit--link 
+  flex: 0 0 50%
+  padding: 0 0 0 38px
+  a 
+    display: inline-block
+    margin: 0 35px 0 0
+    color: #d9d9d9
+    font-size: 14px
+    font-weight: 500
+    @media (min-width: 992.98px)
+      &:hover
+        text-decoration: underline
+
+.header__unit-link-item 
+
+.header__unit--help 
+  flex: 0 0 8%
+  justify-content: center
+  span 
+    position: relative
+    padding: 0 20px 0 0
+    &:after
+      content: ''
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-top: 3px solid #4d4d4d
+      border-right: 3px solid #4d4d4d
+      position: absolute
+      top: 10%
+      right: 0
+      transform: rotate(133deg)
+
+.header__unit-body--help 
+  width: 250px
+  display: none
+
+.header__unit--usd 
+  flex: 0 0 8%
+  justify-content: center
+  text-transform: uppercase
+  span 
+    position: relative
+    padding: 0 20px 0 0
+    &:after
+      content: ''
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-top: 3px solid #4d4d4d
+      border-right: 3px solid #4d4d4d
+      position: absolute
+      top: 10%
+      right: 0
+      transform: rotate(133deg)
+
+.header__unit-body--usd 
+  width: 120px
+  display: none
+
+.header__unit--language 
+  flex: 0 0 14%
+
+.header__unit-head
+  &--help, &--usd, &--lang
+    display: flex
+    justify-content: center
+    padding: 0 0 0 0px
+  >span 
+    position: relative
+    padding: 0 20px 0 0
+    &:after
+      content: ''
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-top: 3px solid #4d4d4d
+      border-right: 3px solid #4d4d4d
+      position: absolute
+      top: 10%
+      right: 0
+      transform: rotate(133deg)

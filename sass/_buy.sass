@@ -1,0 +1,220 @@
+//buy__aside================================================
+.buy 
+  margin: 0 0 30px
+
+.buy__inner 
+  display: flex
+  margin: 0 -15px
+
+.buy__aside-wrapper 
+  flex: 0 0 25%
+  padding: 0 15px
+
+.buy__aside 
+
+.buy__nav 
+  margin: 0 0 30px
+
+.buy__nav-item 
+  cursor: pointer
+  position: relative
+
+.buy__nav-item-head 
+  padding: 24px 50px
+  color: #808080
+  font-size: 13px
+  font-weight: 500
+  background: #262626
+  border-bottom: 2px solid #303030
+  position: relative 
+  img 
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+  &:after
+    content: ''
+    height: 10px
+    width: 10px
+    border-top: 2px solid #4d4d4d
+    border-right: 2px solid #4d4d4d
+    position: absolute
+    top: 50%
+    transform: translateY(-50%) rotate(45deg)
+    right: 20px
+  @media (min-width: 992.98px)
+    &:hover
+      background: #000 
+      transition: all .3s linear
+
+.buy__nav-item-head.active
+  background: lightblue
+
+.buy__nav-item-body 
+  display: flex
+  justify-content: space-around
+  position: absolute
+  top: 0
+  left: 110%
+  width: 500px
+  height: 200px
+  background: black
+  display: none
+  z-index: 100
+  padding: 20px
+
+.buy__nav-item-body.active
+  display: flex
+
+.buy__nav-item-body-col 
+  img 
+    margin: 0 0 10px
+
+.buy__nav-item-body-title 
+  display: block
+  color: #808080
+  font-size: 13px
+  font-weight: 500
+  text-transform: uppercase
+  text-align: center
+
+.buy__billboard 
+  height: 330px
+  background: #262626
+  text-align: center
+  padding: 135px 0 0
+
+.buy__billboard-title 
+  color: #f2f2f2
+  font-size: 20px
+  font-weight: 500
+  display: block 
+  margin: 0 0 24px
+  @media (min-width: 992.98px)
+    &:hover
+      text-decoration: underline
+
+.buy__billboard-subtitle 
+  color: #808080
+  font-size: 14px
+  font-weight: 500
+  @media (min-width: 992.98px)
+    &:hover
+      text-decoration: underline
+
+//buy__main======================================================================
+.buy__main-wrapper 
+  flex: 0 0 75%
+  padding: 0 15px
+
+.buy__main-filter 
+  background: #262626
+  display: flex 
+  padding: 0 50px
+  margin: 0 0 30px
+  a 
+    padding: 24px 0
+    margin: 0 50px 0 0
+    color: #666666
+    font-size: 13px
+    font-weight: 700
+    position: relative
+    &:after
+      content: ''
+      height: 2px
+      width: 100%
+      background: url(../images/)no-repeat center / cover
+      background: #1875f0
+      position: absolute
+      bottom: 0
+      left: 0
+
+.buy__main-row 
+  display: flex
+  flex-flow: row wrap
+  margin: 0 -15px
+  height: 91%
+  align-content: space-between
+
+.buy__col-wrapper 
+  flex: 0 0 33.333%
+  padding: 0 15px
+
+.buy__col 
+  background: #262626
+  padding: 20px 20px 35px
+
+.buy__col-header 
+  display: flex
+  align-items: center
+  margin: 0 0 44px
+
+.buy__col-header-sale 
+  color: #808080
+  font-size: 10px
+  text-transform: uppercase
+  font-weight: 900
+  padding: 5px 10px
+  background: #303030
+  border-radius: 5px
+
+.buy__col-header-burger 
+  margin: 0 25px 0 auto
+
+.buy__col-header-heart 
+
+.buy__col-body 
+  text-align: center
+
+.buy__col-img
+  width: 200px
+  height: 150px
+  margin: 0 auto 30px
+  position: relative
+  img 
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    object-fit: contain
+
+.buy__col-title 
+  margin: 0 0 20px
+  a
+    color: #d9d9d9
+    font-size: 14px
+    font-weight: 500
+    line-height: 1.43
+    @media (min-width: 992.98px)
+      &:hover
+        text-decoration: underline
+
+.buy__col-foter 
+
+.buy__stars 
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+  span 
+    margin: 0 0 0 16px
+    color: #808080
+    font-size: 12px
+    font-weight: 500
+    letter-spacing: 0.12px
+
+.buy__price 
+  display: flex
+  justify-content: center 
+  align-items: center
+  color: #d9d9d9
+  font-size: 16px
+  font-weight: 900
+  letter-spacing: 0.16px
+  img 
+    margin: 0 0 0 16px
+
+.hide 
+  display: none

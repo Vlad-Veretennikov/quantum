@@ -1,0 +1,68 @@
+.intro 
+  margin: 0 0 30px
+
+.intro__inner 
+
+.intro__slider 
+
+.intro__slider-item 
+  height: 331px
+  overflow: hidden
+  position: relative
+  text-align: center
+  padding: 95px 0 0
+  background: url(../images/intro/bg.jpg)no-repeat center / cover
+
+.intro__slider-title 
+  color: #fff
+  font-size: 36px
+  font-weight: 300
+  margin: 0 0 61px
+
+.intro__slider-subtitle 
+  color: #8f8b89
+  font-size: 14px
+  font-weight: 500
+
+//==================================================slider=========================
+.intro__slider
+  position: relative
+
+  .slick-list
+    overflow: hidden
+
+  .slick-track
+    display: flex
+
+  .slick-arrow 
+    font-size: 0
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 3
+  .slick-prev
+    background: url(../images/intro/icons/i1.svg)no-repeat center rgba(0, 0, 0, .4)
+    left: 40px
+  .slick-next
+    background: url(../images/intro/icons/i2.svg)no-repeat center rgba(0, 0, 0, .4)
+    right: 40px
+  
+  .slick-dots
+    display: flex
+    position: absolute
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+    li:not(:last-child)
+      margin: 0 30px 0 0
+    button 
+      font-size: 0
+      width: 68px
+      height: 2px
+      background: #908b86
+    li.slick-active 
+      button
+        background: #fff
